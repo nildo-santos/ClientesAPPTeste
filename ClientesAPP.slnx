@@ -11,4 +11,5 @@
   <Folder Name="/4 - Camada de infraestrutura/">
     <Project Path="Clientes.Infra.Data/Clientes.Infra.Data.csproj" />
   </Folder>
+  <Project Path="Clientes.APP.Tests/Clientes.APP.Tests.csproj" Id="7492784a-bc43-43d0-987b-401ae42c25de" />
 </Solution>
