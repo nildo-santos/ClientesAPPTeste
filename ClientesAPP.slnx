@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/1 - Camada de Apresentação/">
+    <Project Path="Clientes.API/Clientes.API.csproj" />
+  </Folder>
+  <Folder Name="/2 - Camada de Aplicação/" />
+  <Folder Name="/3 - Camada de dominio/">
+    <Project Path="Clientes.Domain/Clientes.Domain.csproj" />
+  </Folder>
+  <Folder Name="/4 - Camada de infraestrutura/">
+    <Project Path="Clientes.Infra.Data/Clientes.Infra.Data.csproj" />
+  </Folder>
+</Solution>
