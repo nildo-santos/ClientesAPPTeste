@@ -14,6 +14,10 @@ namespace Clientes.Domain.Entidade
         public string Cidade { get; set; } = string.Empty;
         public string Estado { get; set; } = string.Empty;
         public string Cep { get; set; }= string.Empty;
+
+        public Guid ClienteId { get; set; }
+
+        public Cliente? Cliente { get; set; }
     }
 }
  

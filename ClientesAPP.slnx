@@ -2,7 +2,9 @@
   <Folder Name="/1 - Camada de Apresentação/">
     <Project Path="Clientes.API/Clientes.API.csproj" />
   </Folder>
-  <Folder Name="/2 - Camada de Aplicação/" />
+  <Folder Name="/2 - Camada de Aplicação/">
+    <Project Path="Clientes.Application/Clientes.Application.csproj" Id="a7c5ea73-9bbe-4f19-b039-7037682598f1" />
+  </Folder>
   <Folder Name="/3 - Camada de dominio/">
     <Project Path="Clientes.Domain/Clientes.Domain.csproj" />
   </Folder>

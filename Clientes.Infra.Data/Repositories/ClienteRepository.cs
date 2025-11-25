@@ -33,6 +33,7 @@ namespace Clientes.Infra.Data.Repositories
         public Cliente? ConsultarPorId(Guid id)
         {
             return _dataContext.Set<Cliente>()
+                .Include(c => c.Endereco)
                 .AsNoTracking()
                 .FirstOrDefault(c => c.Id == id);
 
@@ -40,7 +41,10 @@ namespace Clientes.Infra.Data.Repositories
 
         public IEnumerable<Cliente> ConsultarTodos()
         {
-           return _dataContext.Set<Cliente>().AsNoTracking().ToList();
+           return _dataContext.Set<Cliente>()
+                .Include(c => c.Endereco)
+                .AsNoTracking()
+                .ToList();
 
 
         }
@@ -51,13 +55,10 @@ namespace Clientes.Infra.Data.Repositories
             if ( cliente == null)
                 throw new ApplicationException("Cliente não encontrado");
 
-            cliente.Id = id;
             _dataContext.Remove(cliente);
             _dataContext.SaveChanges();
 
-            {
-                
-            }
+            
         }
     }
 }
