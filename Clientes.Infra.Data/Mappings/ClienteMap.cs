@@ -10,9 +10,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Clientes.Infra.Data.Mappings
 {
-    /// <summary>
-    /// Classe de mapeamento para a entidade Cliente.
-    /// </summary>
+    
     public class ClienteMap : IEntityTypeConfiguration<Cliente>
     {
         public void Configure(EntityTypeBuilder<Cliente> builder)
