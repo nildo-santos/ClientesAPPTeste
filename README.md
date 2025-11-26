@@ -33,7 +33,7 @@ O projeto está organizado em camadas seguindo DDD:
  
  ┗ 📁 ClientesAPP.Tests        → Testes automatizados com xUnit
 
-Estrutura do Projeto
+## Estrutura do Projeto
 
 <img width="472" height="903" alt="Captura de tela 2025-11-25 173030" src="https://github.com/user-attachments/assets/4be94047-3aac-4d8d-944c-14bc3cef9f4f" />
 
@@ -53,7 +53,8 @@ Swagger	Documentação interativa
 
 DDD	Separação por camadas e responsabilidades
 
-📡 Endpoints da API
+
+### Endpoints da API
 
 🔹 GET /clientes
 
@@ -67,7 +68,7 @@ Retorna os dados de um cliente específico.
 
 Cria um novo cliente.
 
-📌 Validações:
+###  Validações:
 
 Nome obrigatório
 
@@ -85,7 +86,7 @@ Atualiza um cliente existente.
 
 Remove um cliente.
 
-🛢 Banco de Dados (InMemory)
+### Banco de Dados (InMemory)
 
 Para facilitar testes e avaliação, o projeto utiliza o provider EF Core InMemory:
 
@@ -94,7 +95,7 @@ Não precisa instalar SQL Server
 Banco é criado e descartado em memória
 
 
-🔁 AutoMapper
+### AutoMapper
 
 O mapeamento das entidades e DTOs é realizado pelo profile:
 
@@ -116,7 +117,7 @@ Com suporte completo para Cliente e Endereco.
 ✔ Todos os campos de endereço obrigatórios
 
 
-🧪 Testes Automatizados (xUnit + Moq)
+### Testes Automatizados (xUnit + Moq)
 
 Foi criada uma classe completa de testes:
 
@@ -147,11 +148,14 @@ Email duplicado ao atualizar
 
 Cliente inexistente (obter, atualizar e deletar)
 
-📸 Print dos Testes
+### Evidências dos Testes
 
-INSERIR PRINT AQUI
 
-📘 Swagger
+<img width="1089" height="567" alt="Captura de tela 2025-11-25 193550" src="https://github.com/user-attachments/assets/70907b6e-a565-4ec0-a8b1-29a5469efcaf" />
+
+
+
+## Swagger
 
 O Swagger está habilitado automaticamente ao rodar o projeto.
 
@@ -215,4 +219,4 @@ Relacionamento Cliente–Endereço
 
 ## 🧑‍💻 Autor
 
-**Nildo Santos**\
+**Nildo Santos**
